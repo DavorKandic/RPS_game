@@ -3,4 +3,4 @@
 _Good old RPS game_
 
  * 1. Player1 vs Player2
- * 2. Player1 vs Compy           -- TODO!
+ * 2. Player1 vs Compy           ~-- TODO!~ _Done!_
