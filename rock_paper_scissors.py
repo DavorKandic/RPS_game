@@ -2,10 +2,14 @@ import sys
 from random import choice as rch
 
 def ending(num):
+    global opponent
     if num == 1:
         print('        Player One Wins!        ')
     elif num == 2:
-        print('        Player Two Wins!        ')
+        if opponent == '1':
+            print('        Player Two Wins!        ')
+        else:
+            print('         Computer Wins!         ')
     elif num == 0:
         print('        It\'s a Tie! !          ')
 
