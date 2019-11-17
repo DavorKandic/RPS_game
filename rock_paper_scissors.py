@@ -20,7 +20,7 @@ while True:
     print('If you want to quit just enter "q"...')
     choice_1 = None
     while choice_1 not in valid_moves:
-        choice_1 = input('Player One, enter your choice: ')
+        choice_1 = input('Player One, enter your choice: ').lower()
         if choice_1 == 'q':
             print()
             print('Bye-bye!')
@@ -33,7 +33,7 @@ while True:
     print('****** NO CHEATING!!! ******\n\n' * 20)
     choice_2 = None
     while choice_2 not in valid_moves:
-        choice_2 = input('Player Two, enter your choice: ')
+        choice_2 = input('Player Two, enter your choice: ').lower()
         if choice_2 == 'q':
             print()
             print('Bye-bye!')
