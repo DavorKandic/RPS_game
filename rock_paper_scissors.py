@@ -49,7 +49,9 @@ while True:
     if choice_2 in valid_dict.keys():
         choice_2 = valid_dict[choice_2]
     print('          SHOOT!          ')
-    if choice_1 == 'rock':
+    if choice_1 == choice_2:
+        ending(0)
+    elif choice_1 == 'rock':
         if choice_2 == 'scissors':
             ending(1)
         elif choice_2 == 'paper':
