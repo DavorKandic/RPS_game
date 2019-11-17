@@ -29,13 +29,8 @@ while True:
         if choice_1 not in valid_moves:
             print('  -----######__Wrong input!__#####------  ')
     if choice_1 in valid_dict.keys():
-        choice_1 = valid_dict[choice_1]
-        
-    for i in range(10):
-        print('****** NO CHEATING!!! ******')
-        print()
-        print('****** NO CHEATING!!! ******')
-        print()
+        choice_1 = valid_dict[choice_1]  
+    print('****** NO CHEATING!!! ******\n\n' * 20)
     choice_2 = None
     while choice_2 not in valid_moves:
         choice_2 = input('Player Two, enter your choice: ')
