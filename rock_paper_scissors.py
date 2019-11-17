@@ -1,5 +1,14 @@
 import sys
 
+def ending(num):
+    if num == 1:
+        print('        Player One Wins!        ')
+    elif num == 2:
+        print('        Player Two Wins!        ')
+    elif num == 0:
+        print('        It\'s a Tie! !        ')
+        
+
 print('...rock...')
 print('...paper...')
 print('...scissors...')
@@ -40,19 +49,22 @@ while True:
     if choice_2 in valid_dict.keys():
         choice_2 = valid_dict[choice_2]
     print('          SHOOT!          ')
-    if choice_1 == 'rock' and choice_2 == 'scissors':
-        print('        Player One Wins!        ')
-    elif choice_1 == 'scissors' and choice_2 == 'rock':
-        print('        Player Two Wins!        ')
-    elif choice_1 == 'paper' and choice_2 == 'scissors':
-        print('        Player Two Wins!        ')
-    elif choice_1 == 'scissors' and choice_2 == 'paper':
-        print('        Player One Wins!        ')
-    elif choice_1 == 'paper' and choice_2 == 'rock':
-        print('        Player One Wins!        ')
-    elif choice_1 == 'rock' and choice_2 == 'paper':
-        print('        Player Two Wins!        ')
+    if choice_1 == 'rock':
+        if choice_2 == 'scissors':
+            ending(1)
+        elif choice_2 == 'paper':
+            ending(2)    
+    elif choice_1 == 'scissors':
+        if choice_2 == 'rock':
+            ending(2)
+        elif choice_2 == 'paper':
+            ending(1)
+    elif choice_1 == 'paper':
+        if choice_2 == 'scissors':
+            ending(2)
+        elif choice_2 == 'rock':
+            ending(1)
     elif choice_1 == choice_2:
-        print('        It\'s a DRAW! !        ')
+        ending(0)
 
     
